@@ -11,7 +11,10 @@ namespace Lesson07_02
             public string ReaderName;
             public DateTime TakenAt;
             //Kontruktorius priskiria visas reiksmes, kad butu objektas su visomis reiksmemis
-            //public Bibliotekosknyga =
+            //public Bibliotekosknyga()
+            //{
+
+            //}
             public int HowLongBookIsTaken() 
             {
                 DateTime currentDate = DateTime.Today;
@@ -26,7 +29,7 @@ namespace Lesson07_02
             bibliotekosknyga.Title = "Haris Poteris";
             bibliotekosknyga.TakenAt = new DateTime(2022,09,09);
             int bookTakenInDays = bibliotekosknyga.HowLongBookIsTaken();
-            Console.WriteLine($"Knyga paimta {bookTakenInDays} dienu", r);
+            Console.WriteLine($"Knyga su ID {bibliotekosknyga.id} paimta {bookTakenInDays} dienu");
         }
     }
 }
