@@ -30,6 +30,7 @@ namespace Lesson07_02
             bibliotekosknyga.TakenAt = new DateTime(2022,09,09);
             int bookTakenInDays = bibliotekosknyga.HowLongBookIsTaken();
             Console.WriteLine($"Knyga su ID {bibliotekosknyga.id} paimta {bookTakenInDays} dienu");
+            Console.WriteLine(bibliotekosknyga.Title);
         }
     }
 }
